@@ -24,11 +24,27 @@ using namespace std;
 int main(int argc, char** argv) {
     
     setlocale (LC_ALL, "Portuguese");
+    pilha=(TOP*)malloc(sizeof(TOP)*10);
+    
+    //criar função de interface com apresentação da análise eta a etapa
+    //exemplo   ::::rodando analisador sintático:::
+    //          ::::análise concluida entrada sintatitamente válida 
+    
+    //          ::::rodando analisador lexico
+    //          ::::arquivo asdadfadf.L resonhecido pelo autômato
+    
+ 
+    
+    //Daqui pra baixo é uma tentativa de organizar os token num vetor por valor na ASCII
+    //A ideia aqui é, por exemplo, por o valor ASCII do a na posição 0 do vetor sigma
+    //to apanhando aqui pra definir o main e o if
 	int a, i;
 char alfabeto[50] = {'a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'x', 'y', 'z', '1', '2', '3', '4', '5', '6', '7', '8', '9', '0', "(", ")", "[", "]" "=", ">", "<", "+", "-", ","};
-char tokensMultiLetras[2][];
-tokensMultiLetras[0][]="main";
-tokensMultiLetras[1][]="if";	
+// TOKENS DE MAIS DE UMA LETRA
+//main
+//if
+
+
 //{'a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'x', 'y', 'z', '1', '2', '3', '4', '5', '6', '7', '8', '9', '0', '=', '>', '<', '<>', '+', '-', '*', '/', '%', '?'};
 
 	for(i=0; i<40; i++){
