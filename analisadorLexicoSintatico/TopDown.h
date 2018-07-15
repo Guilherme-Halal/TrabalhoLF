@@ -26,7 +26,7 @@ struct pilhaTopDonw{
 	int *valor;
 	int topo;
 	int tamanho;
-//	int poped; para conferencia se necessário
+	int poped; 
 };
 
 TOP* push(TOP* pilha, int dado);

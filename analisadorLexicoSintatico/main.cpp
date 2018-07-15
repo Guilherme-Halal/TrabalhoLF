@@ -24,7 +24,7 @@ using namespace std;
 int main(int argc, char** argv) {
     
     setlocale (LC_ALL, "Portuguese");
-    pilha=(TOP*)malloc(sizeof(TOP)*10);
+    pilha=(TOP*)malloc(sizeof(TOP)*500);
     
     //criar função de interface com apresentação da análise eta a etapa
     //exemplo   ::::rodando analisador sintático:::

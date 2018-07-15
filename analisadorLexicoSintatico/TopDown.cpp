@@ -16,29 +16,16 @@ using namespace std;
 //manipulação de pilha
 
 TOP *pilha=NULL;
-pilha=(TOP*)malloc(sizeof(TOP)*10);
+
 
 TOP* push(TOP* pilha, int dado){		//função que poe dados na pilha de operandos
-	if(pilha->topo<(pilha->tamanho*0.75)){
-	pilha->valor[pilha->topo]=dado;
-	pilha->topo++;
-	}
-	else{
-	pilha->tamanho*=2;
-	pilha->valor=(int*)realloc(pilha->valor, sizeof(int)*pilha->tamanho);
-	pilha->valor[pilha->topo]=dado;
-	pilha->topo++;
-	}
+            pilha->valor[pilha->topo]=dado;
+            pilha->topo++;
 return pilha;
 }
 
 TOP* pop(TOP* pilha){					//função que retira valores da pilha de operandos
-	pilha->topo--;
-	pilha->valor=pilha->valor[pilha->topo];
-	
-	/*if(pilha->topo<(pilha->limite*0.25)){
-		pilha->limite/=2;
-		pilha->operando=(int*)realloc(pilha->operando, sizeof(int)*pilha->limite);
-	}*/
+	pilha->poped=pilha->valor[pilha->topo];
+        pilha->topo--;
 	return pilha;
 }
