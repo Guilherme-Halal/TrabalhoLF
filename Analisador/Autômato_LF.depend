@@ -1,0 +1,20 @@
+# depslib dependency file v1.0
+1531616810 source:c:\users\gisel\desktop\autômato_lf\automato.c
+	<stdio.h>
+	<stdlib.h>
+	"automato.h"
+
+1531618269 c:\users\gisel\desktop\autômato_lf\automato.h
+
+1531620599 source:c:\users\gisel\desktop\autômato_lf\main.c
+	<stdio.h>
+	<stdlib.h>
+	"automato.h"
+
+1531616810 source:c:\users\gisel\desktop\autômato_lf\trabalholf\analisador\automato.c
+	<stdio.h>
+	<stdlib.h>
+	"automato.h"
+
+1531618269 c:\users\gisel\desktop\autômato_lf\trabalholf\analisador\automato.h
+
